@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ScoreScreen">
+
+        <TextView
+            android:id="@+id/textView_low4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="52dp"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_four4"
+            app:layout_constraintEnd_toStartOf="@+id/divider2"
+            app:layout_constraintTop_toBottomOf="@+id/youScored" />
+
+        <TextView
+            android:id="@+id/textView_five4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_six4"
+            app:layout_constraintEnd_toEndOf="@+id/textView_four4"
+            app:layout_constraintStart_toStartOf="@+id/textView_four4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_four4" />
+
+        <TextView
+            android:id="@+id/textView_six4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_seven4"
+            app:layout_constraintEnd_toEndOf="@+id/textView_five4"
+            app:layout_constraintStart_toStartOf="@+id/textView_five4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_five4" />
+
+        <TextView
+            android:id="@+id/textView_seven4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/totalScore"
+            app:layout_constraintEnd_toEndOf="@+id/textView_six4"
+            app:layout_constraintStart_toStartOf="@+id/textView_six4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_six4" />
+
+        <TextView
+            android:id="@+id/textView_four4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_five4"
+            app:layout_constraintEnd_toEndOf="@+id/textView_low4"
+            app:layout_constraintStart_toStartOf="@+id/textView_low4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_low4" />
+
+        <TextView
+            android:id="@+id/textView_eight4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_nine4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.211"
+            app:layout_constraintStart_toEndOf="@+id/textView_eight"
+            app:layout_constraintTop_toBottomOf="@+id/youScored" />
+
+        <TextView
+            android:id="@+id/textView_ten4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_eleven4"
+            app:layout_constraintEnd_toEndOf="@+id/textView_nine4"
+            app:layout_constraintStart_toStartOf="@+id/textView_nine4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nine4" />
+
+        <TextView
+            android:id="@+id/textView_eleven4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_twelve4"
+            app:layout_constraintEnd_toEndOf="@+id/textView_ten4"
+            app:layout_constraintStart_toStartOf="@+id/textView_ten4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_ten4" />
+
+        <TextView
+            android:id="@+id/textView_twelve4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/totalScore"
+            app:layout_constraintEnd_toEndOf="@+id/textView_eleven4"
+            app:layout_constraintStart_toStartOf="@+id/textView_eleven4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_eleven4" />
+
+        <TextView
+            android:id="@+id/textView_nine4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/zero"
+            app:layout_constraintBottom_toTopOf="@+id/textView_ten4"
+            app:layout_constraintEnd_toEndOf="@+id/textView_eight4"
+            app:layout_constraintStart_toStartOf="@+id/textView_eight4"
+            app:layout_constraintTop_toBottomOf="@+id/textView_eight4" />
+
+        <TextView
+            android:id="@+id/totalScore"
+            android:layout_width="381dp"
+            android:layout_height="54dp"
+            android:text="@string/defaultScore"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.739" />
+
+        <Button
+            android:id="@+id/playAgain"
+            android:layout_width="158dp"
+            android:layout_height="66dp"
+            android:text="@string/playAgain"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.499"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.956" />
+
+        <TextView
+            android:id="@+id/youScored"
+            android:layout_width="250dp"
+            android:layout_height="47dp"
+            android:text="@string/youScored"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.062" />
+
+        <TextView
+            android:id="@+id/textView_low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/low"
+            app:layout_constraintBottom_toTopOf="@+id/textView_four"
+            app:layout_constraintEnd_toStartOf="@+id/textView_low4"
+            app:layout_constraintHorizontal_bias="0.79"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/youScored" />
+
+        <TextView
+            android:id="@+id/textView_five"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/five"
+            app:layout_constraintBottom_toTopOf="@+id/textView_six"
+            app:layout_constraintEnd_toEndOf="@+id/textView_four"
+            app:layout_constraintStart_toStartOf="@+id/textView_four"
+            app:layout_constraintTop_toBottomOf="@+id/textView_four" />
+
+        <TextView
+            android:id="@+id/textView_six"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/six"
+            app:layout_constraintBottom_toTopOf="@+id/textView_seven"
+            app:layout_constraintEnd_toEndOf="@+id/textView_five"
+            app:layout_constraintStart_toStartOf="@+id/textView_five"
+            app:layout_constraintTop_toBottomOf="@+id/textView_five" />
+
+        <TextView
+            android:id="@+id/textView_seven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/seven"
+            app:layout_constraintBottom_toTopOf="@+id/totalScore"
+            app:layout_constraintEnd_toEndOf="@+id/textView_six"
+            app:layout_constraintStart_toStartOf="@+id/textView_six"
+            app:layout_constraintTop_toBottomOf="@+id/textView_six" />
+
+        <TextView
+            android:id="@+id/textView_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/four"
+            app:layout_constraintBottom_toTopOf="@+id/textView_five"
+            app:layout_constraintEnd_toEndOf="@+id/textView_low"
+            app:layout_constraintStart_toStartOf="@+id/textView_low"
+            app:layout_constraintTop_toBottomOf="@+id/textView_low" />
+
+        <TextView
+            android:id="@+id/textView_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="53dp"
+            android:text="@string/eight"
+            app:layout_constraintBottom_toTopOf="@+id/textView_nine"
+            app:layout_constraintStart_toEndOf="@+id/divider2"
+            app:layout_constraintTop_toBottomOf="@+id/youScored" />
+
+        <TextView
+            android:id="@+id/textView_eleven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/eleven"
+            app:layout_constraintBottom_toTopOf="@+id/textView_twelve"
+            app:layout_constraintEnd_toEndOf="@+id/textView_ten"
+            app:layout_constraintStart_toStartOf="@+id/textView_ten"
+            app:layout_constraintTop_toBottomOf="@+id/textView_ten" />
+
+        <TextView
+            android:id="@+id/textView_twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/twelve"
+            app:layout_constraintBottom_toTopOf="@+id/totalScore"
+            app:layout_constraintEnd_toEndOf="@+id/textView_eleven"
+            app:layout_constraintStart_toStartOf="@+id/textView_eleven"
+            app:layout_constraintTop_toBottomOf="@+id/textView_eleven" />
+
+        <TextView
+            android:id="@+id/textView_nine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nine"
+            app:layout_constraintBottom_toTopOf="@+id/textView_ten"
+            app:layout_constraintEnd_toEndOf="@+id/textView_eight"
+            app:layout_constraintStart_toStartOf="@+id/textView_eight"
+            app:layout_constraintTop_toBottomOf="@+id/textView_eight" />
+
+        <TextView
+            android:id="@+id/textView_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ten"
+            app:layout_constraintBottom_toTopOf="@+id/textView_eleven"
+            app:layout_constraintEnd_toEndOf="@+id/textView_nine"
+            app:layout_constraintStart_toStartOf="@+id/textView_nine"
+            app:layout_constraintTop_toBottomOf="@+id/textView_nine" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/listDivider"
+            android:scaleY=".40"
+            android:translationY="-30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:scaleX=".4"
+            app:layout_constraintBottom_toTopOf="@+id/textView_four4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_low4" />
+
+        <View
+            android:id="@+id/divider18"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:scaleX=".4"
+            app:layout_constraintBottom_toTopOf="@+id/textView_five4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_four4" />
+
+        <View
+            android:id="@+id/divider19"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:scaleX=".4"
+            app:layout_constraintBottom_toTopOf="@+id/textView_six4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_five4" />
+
+        <View
+            android:id="@+id/divider20"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:scaleX=".4"
+            app:layout_constraintBottom_toTopOf="@+id/textView_seven4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_six4" />
+
+        <View
+            android:id="@+id/divider21"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider"
+            android:scaleX=".4"
+            app:layout_constraintBottom_toTopOf="@+id/totalScore"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_seven4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
